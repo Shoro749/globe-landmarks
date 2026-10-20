@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
+import './style.css';
+
 const canvas = document.querySelector('canvas.webgl');
 const scene = new THREE.Scene();
 const labels = document.querySelector('.labels');
