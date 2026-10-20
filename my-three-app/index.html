@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#06111e" />
+    <title>Atlas | Архітектурні пам'ятки світу</title>
+    <link src="src.style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <canvas class="webgl"></canvas>
+    <main class="interface">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Atlas — на головну">
+          <span class="brand-mark">A</span>
+          <span><strong>ATLAS</strong><small>архітектура світу</small></span>
+        </a>
+        <div class="topbar-actions">
+          <span class="status"><i></i>LIVE EXPLORATION</span>
+          <button
+            class="mode-toggle"
+            type="button"
+            aria-pressed="false"
+            aria-label="Перемкнути режим дня і ночі"
+          >
+            <span class="mode-icon">☀</span><span class="mode-label">День</span
+            ><span class="toggle-track"><span></span></span>
+          </button>
+        </div>
+      </header>
+
+      <section class="intro">
+        <p class="eyebrow">04 / 05 КООРДИНАТИ</p>
+        <h1>Світ, створений<br /><em>людьми.</em></h1>
+        <p class="intro-copy">
+          Подорожуйте крізь час і простір, відкриваючи споруди, які змінили
+          обриси нашої планети.
+        </p>
+        <div class="hint">
+          <span class="hint-dot"></span>Оберіть маркер, щоб дослідити
+        </div>
+      </section>
+
+      <div class="labels" aria-live="polite"></div>
+
+      <aside class="landmark-card" aria-hidden="true">
+        <button class="close-card" type="button" aria-label="Закрити картку">
+          ×
+        </button>
+        <p class="card-index">01 / ЛАНДМАРК</p>
+        <h2></h2>
+        <p class="card-location"></p>
+        <div class="card-divider"></div>
+        <dl class="card-meta">
+          <div>
+            <dt>РІК ПОБУДОВИ</dt>
+            <dd class="card-year"></dd>
+          </div>
+          <div>
+            <dt>КООРДИНАТИ</dt>
+            <dd class="card-coordinates"></dd>
+          </div>
+        </dl>
+        <p class="card-fact"></p>
+        <button class="return-button" type="button">
+          Повернутися до глобуса <span>↗</span>
+        </button>
+      </aside>
+
+      <footer class="footer-note">
+        <span>EARTH / 01</span><span>МАСШТАБ 1 : 1</span><span>◌ 2026</span>
+      </footer>
+    </main>
+    <script type="module" src="/src/script.js"></script>
+  </body>
+</html>
